@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,11 +8,12 @@ const Header = () => {
         <div className="bg-gray-900">
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
-            <NavLink
+            <Link
               to="/"
               aria-label="Company"
               title="Company"
-              className="inline-flex items-center"
+              style={{display:'inline-flex',alignItems:'center'}}
+              className = {(isActive)=>isActive ? 'active': undefined}
             >
               <svg
                 className="w-8 text-teal-accent-400"
@@ -31,14 +33,16 @@ const Header = () => {
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                 Moq-Test
               </span>
-            </NavLink>
+            </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <NavLink
                   to="/topics"
                   aria-label="Our product"
                   title="Our product"
+                
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  
                 >
                   Topics
                 </NavLink>
@@ -93,14 +97,15 @@ const Header = () => {
                   <div className="p-5 bg-white border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
-                        <NavLink
+                        <Link
                           to="/"
                           aria-label="Company"
                           title="Company"
                           className="inline-flex items-center"
                         >
                           <svg
-                            className="w-8 text-deep-purple-accent-400"
+                           style={{display:'inline-flex',alignItems:'center'}}
+                           className = {(isActive)=>isActive ? 'active': undefined}
                             viewBox="0 0 24 24"
                             strokeLinejoin="round"
                             strokeWidth="2"
@@ -117,7 +122,7 @@ const Header = () => {
                           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Moq-Test
                           </span>
-                        </NavLink>
+                        </Link>
                       </div>
                       <div>
                         <button
