@@ -5,7 +5,7 @@ import {AiFillEye} from 'react-icons/ai';
 
 const Question = ({ques}) => {
     
-    const {id,question,correctAnswer,options}=ques;
+    const {question,correctAnswer,options}=ques;
     
     const [show,setShow]=useState(false);
 
@@ -34,7 +34,7 @@ const Question = ({ques}) => {
     return (
         <div className='mx-auto w-2/3 grid grid-cols-2 gap-4 mb-10 bg-orange-50' style={{boxShadow:'1px 4px 8px gray',borderRadius:'20px', marginTop:'40px'}}> <br /><br />
           <div style={{boxShadow:'3px 4px 5px gray',borderRadius:'20px', marginRight:'20px',marginTop:'20px',marginBottom:'20px'}}>
-            <div style={{boxShadow:'3px 4px 5px gray',borderRadius:'20px',fontSize: '1.25rem',fontWeight: '900',marginBottom:'10px'}}>
+            <div className='bg-orange-300' style={{boxShadow:'3px 4px 5px gray',borderRadius:'20px',fontSize: '1.25rem',fontWeight: '900',marginBottom:'10px'}}>
             <h1>Please Cheack</h1>
             <h1>Currect Answer</h1>
             {
