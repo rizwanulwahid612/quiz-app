@@ -6,9 +6,12 @@ import Blog from './component/Blog/Blog';
 import Main from './Layout/Main';
 import ErrorPage from './component/ErrorPage/ErrorPage';
 import Quizes from './component/Quizes/Quizes';
+import { ToastContainer } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const router = createBrowserRouter([
+    
     {path:'/',element:<Main></Main>,
   errorElement:<ErrorPage></ErrorPage>,
 children:[
@@ -25,8 +28,10 @@ children:[
   
   ])
   return (
+    
     <div className="App">
-      <RouterProvider router={router}></RouterProvider>
+      <ToastContainer position='center'></ToastContainer>
+      <RouterProvider router={router} ></RouterProvider>
       
     </div>
   );
