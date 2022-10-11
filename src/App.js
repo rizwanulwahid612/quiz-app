@@ -24,7 +24,7 @@ children:[
   {path:'/statistics',element:<Statistics></Statistics>},
   {path:'/blog',element:<Blog></Blog>}
 ]},
-  
+{path:'*',element:<ErrorPage></ErrorPage>}
   ])
   return (
     

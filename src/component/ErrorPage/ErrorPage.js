@@ -1,10 +1,12 @@
 import React from 'react';
 import { useRouteError } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const ErrorPage = () => {
     const error =useRouteError();
     return (
         <div>
+            <Header></Header>
            
             <h1 className='text-5xl mt-14'>This is Error page Plz go back to home ..!!!</h1>
             {error && (<div> 
