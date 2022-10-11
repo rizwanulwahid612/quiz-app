@@ -7,7 +7,7 @@ import Course from '../Course/Course';
 const Topic = () => {
     const topic = useLoaderData();
     const loaderData=topic.data;
-   // console.log(loaderData)
+   
     return (
         <div className='mx-auto w-3/4 mt-16'>
             <div style={{display:'flex',textAlign:'center',alignItems:'center',justifyContent:'center',marginBottom:'10px'}}>
