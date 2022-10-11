@@ -16,7 +16,7 @@ const Graps = ({graps}) => {
     
   
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-24'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-48'>
             <div>
             <LineChart
       width={400}

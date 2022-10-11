@@ -9,7 +9,7 @@ const Topic = () => {
     const loaderData=topic.data;
    // console.log(loaderData)
     return (
-        <div className='mx-auto w-3/4 mt-3'>
+        <div className='mx-auto w-3/4 mt-16'>
             <div style={{display:'flex',textAlign:'center',alignItems:'center',justifyContent:'center',marginBottom:'10px'}}>
             <Lottie style={{width:'350px' ,marginLeft:'50px'}} animationData={reading}></Lottie><br />
             <h1 className='text-2xl font-bold ml-2 mr-2'>Use the Quizzes tool to take a quiz, review your quiz results, and see class statistics for a quiz.</h1>

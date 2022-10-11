@@ -52,7 +52,8 @@ const Question = ({ques}) => {
             <div>
             <h1 style={{width:'180%',color:'blue',fontWeight:'700',fontSize:'1.1rem'}}>Quiz: {question}</h1><br /><br />
                 
-               <h2 style={{display:'grid',gridTemplateColumns:'repeat(2, 1fr)',paddingRight:'70px',width:'200%'}}>
+               {/* <h2 style={{display:'grid',gridTemplateColumns:'repeat(2, 1fr)',paddingRight:'70px',width:'200%'}}> */}
+                <h2 className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[200%]'>
                 {
                     options.map(option=><Option 
                         option={option}
