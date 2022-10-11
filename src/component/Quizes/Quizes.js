@@ -5,8 +5,9 @@ import Question from '../Question/Question';
 
 const Quizes = () => {
     const quizes =useLoaderData();
+    
     const quizQuestion=quizes.data.questions;
-    console.log(quizQuestion);
+
    
     return (
         <div>
@@ -15,6 +16,7 @@ const Quizes = () => {
                 quizQuestion.map(ques=><Question 
                     ques={ques}
                     key={ques.id}
+                    
                     
                 ></Question>)
             }
